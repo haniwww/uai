@@ -40,7 +40,7 @@ def update(i):
     # print obs[:i]
     # print mu, std
     line.set_ydata(norm.pdf(x, mu, std))
-    ax.set_xlabel('petal_length $\mu = %.2f, \sigma = %.2f$' % (mu, std))
+    ax.set_xlabel('petal_length $\hat{\mu} = %.2f, \hat{\sigma} = %.2f$' % (mu, std))
     ax.set_title('Gaussian MLE $N = {}$'.format(i))
     return line, ax
 
